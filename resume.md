@@ -5,7 +5,7 @@ menutitle: Resume
 ---
 ## Currently
 
-I am first-year PhD student at Brown University.
+I am a first-year Ph.D. student in the Computer Science department at <a href="https://www.brown.edu">Brown University</a>. I work in the area of computer systems with <a href="https://cs.brown.edu/~tab">Dr Theophilus Benson</a>. Prior to this, I worked with <a href="https://web.lums.edu.pk/~ihsan/">Dr Ihsan Ayyub Qazi</a> and <a>Dr Zafar Ayyub Qazi</a> on improving the web user-experience for the developing world.
 
 ## Education
 
@@ -40,6 +40,19 @@ __Mobile web browsing under memory pressure__
 ACM SIGCOMM CRR
 
 
+## Teaching
+
+`TA`
+__Network-Centric Computing__
+Spring 2020
+
+`TA`
+__Data Structures__
+Fall 2019
+
+`TA`
+__Introduction to Programming__
+Spring 2018
 
 
 
