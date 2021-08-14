@@ -5,7 +5,8 @@ menutitle: Home
 menuorder: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I am a first-year Ph.D. student in the Computer Science department at <a>Brown University</a>. I work in the area of computer systems with <a>Dr Theophilus Benson</a>. Prior to this, I worked with <a>Dr Ihsan Ayyub Qazi</a> and <a>Dr Zafar Ayyub Qazi</a> on improving the web user-experience for the developing world.
+
 
 ## Current Interests and Projects:
 
