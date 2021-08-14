@@ -8,7 +8,7 @@ comments: true
 category: blog
 ---
 
-<img src="../../images/amp-logo.png">
+<img src="../../images/amp-logo.png" alt="Google AMP Logo">
 
 AMP is an alternative framework to HTML with some restrictions to ensure reliable page performance. It simplifies the original webpage by stripping away “unnecessary” code and by replacing some of the standard html tags with its own tags (like replacing `<img>` tag with `<amp-img>` tag). AMP does a lot of other optimizations that helps in reducing the page load time and size. We can categorize these optimizations into following 3 categories:
 
