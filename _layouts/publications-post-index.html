@@ -30,9 +30,8 @@
       {% endif %}
       <article>
         {% if post.link %}
-          <h2 class="link-post"><a href="{{ site.github.url }}{{ post.link }}" title="{{ post.title }}">{{ post.title }}</a> 
-            <p>{{ post.excerpt | strip_html }}</p>
-              <i class="fa fa-link"></i></a></h2>
+          <h2 class="link-post"><a href="{{ post.link }}" title="{{ post.title }}">{{ post.title }}</a> <i class="fa fa-link"></i></h2>
+            <p>{{ post.excerpt | strip_html }}</p>   
         {% else %}
           <h2><a href="{{ site.github.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
           <p>{{ post.excerpt | strip_html }}</p>
