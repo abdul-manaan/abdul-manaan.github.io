@@ -11,4 +11,4 @@ I am a first-year Ph.D. student in the Computer Science department at <a>Brown U
 ## Current Interests and Projects:
 
 - Analysing Web Performance on Mobile Devices
-- Analysisg Google's AMP Pages
+- Analysing Google's AMP Pages
