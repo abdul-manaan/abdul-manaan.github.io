@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title: Abdul Manan | PhD Student | Brown University
+title: Abdul Manan | Ph.D. Student
 locale: en_US
 logo: # filename of a logo image that has been placed into your images directory
 
@@ -8,18 +8,18 @@ logo: # filename of a logo image that has been placed into your images directory
 owner:
   name: Abdul Manan
   avatar: bio-photo.jpg
-  bio: "I am a first-year Ph.D. student in the Computer Science department at Brown University. I work in the area of computer systems with Dr Theophilus Benson. Prior to this, I worked with Dr Ihsan Ayyub Qazi and Dr Zafar Ayyub Qazi on improving the web user-experience for the developing world."
+  bio: "I am a first-year Ph.D. student in the Computer Science department at Brown University. I work in the area of computer systems with Dr Theophilus Benson."
   email: abdul_manan [at] brown [dot] edu
   # Do not include the @ symbol in your Twitter username
   twitter: Abdul-Manan12
   linkedin: #username
   github: abdul-manaan
   orcid: # ID Number (ex. 0000-0000-0000-0000)
-  researchgate: #username
+  researchgate: Abdul-Manan-34
   mendeley: #username
   google:
     plus: #username
-    analytics:
+    analytics: G-Z02H79FN8Y
     verify:
     scholar: #id
   facebook: #username
@@ -44,7 +44,7 @@ owner:
 # you may do so in _sass/variables.scss
 highlight-color: '#CC0000'
 lowlight-color: '#000'
-
+google_analytics: G-Z02H79FN8Y
   # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
 creative-commons:
   cc-by: #yes
