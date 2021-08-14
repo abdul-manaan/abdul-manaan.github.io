@@ -42,17 +42,17 @@ ACM SIGCOMM CRR
 
 ## Teaching
 
-`TA`
+`Spring 2020`
 __Network-Centric Computing__
-Spring 2020
+TA | LUMS
 
-`TA`
+`Fall 2019`
 __Data Structures__
-Fall 2019
+TA | LUMS
 
-`TA`
+`Spring 2018`
 __Introduction to Programming__
-Spring 2018
+TA | LUMS
 
 
 
