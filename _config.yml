@@ -19,7 +19,7 @@ owner:
   mendeley: #username
   google:
     plus: #username
-    analytics: G-Z02H79FN8Y
+    analytics: 
     verify:
     scholar: #id
   facebook: #username
@@ -44,7 +44,6 @@ owner:
 # you may do so in _sass/variables.scss
 highlight-color: '#CC0000'
 lowlight-color: '#000'
-google_analytics: G-Z02H79FN8Y
   # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
 creative-commons:
   cc-by: #yes
