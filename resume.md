@@ -2,6 +2,7 @@
 layout: resume
 menuorder: 3
 menutitle: Resume
+tags: ["Abdul Manan", "Brown University", "PhD", "Student", "LUMS", "Web Performance"]
 ---
 ## Currently
 
