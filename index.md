@@ -1,8 +1,9 @@
 ---
 layout: page
-excerpt: "About Me..."
+excerpt: I am a first-year Ph.D. student in the Computer Science department at Brown University. I work in the area of computer systems with Dr Theophilus Benson."
 menutitle: Home
 menuorder: 1
+keywords: ["Abdul Manan", "Brown University", "PhD", "Student", "LUMS", "Web Performance"]
 ---
 
 I am a first-year Ph.D. student in the Computer Science department at <a href="https://www.brown.edu">Brown University</a>. I work in the area of computer systems with <a href="https://cs.brown.edu/~tab">Dr Theophilus Benson</a>. Prior to this, I worked with <a href="https://web.lums.edu.pk/~ihsan/">Dr Ihsan Ayyub Qazi</a> and <a>Dr Zafar Ayyub Qazi</a> on improving the web user-experience for the developing world.
