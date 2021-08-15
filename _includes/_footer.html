@@ -1,5 +1,5 @@
 {% if site.owner.google.ad-client and site.owner.google.ad-slot %}  
-  <p>This page got <span id="visits"></span> views.</p>
+  
 <div class="google-ads">
   <!-- 320 x 50 ad -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -20,5 +20,11 @@
 <br /></span>
 {% else  %}
 <span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://ncsu-libraries.github.io/jekyll-academic/" rel="nofollow">Jekyll Academic</a> theme.
+  <span id="visits"></span> views.
+  <script>
+    function pageViewsCounter(response) {
+      document.getElementById('visits').innerText = response.value;
+    }
+  </script>
 <br /></span>
 {% endif %}
