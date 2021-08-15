@@ -28,7 +28,12 @@
 
 <meta http-equiv="cleartype" content="on">
 
-
+<script async src="https://api.countapi.xyz/hit/mysite.com/visits?callback=pageViewsCounter"></script>
+<script>
+  function pageViewsCounter(response) {
+    document.getElementById('visits').innerText = response.value;
+  }
+</script>
 <!-- Modernizr -->
 <script src="{{ site.github.url }}/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
 
