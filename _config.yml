@@ -7,7 +7,7 @@ logo: # filename of a logo image that has been placed into your images directory
 owner:
   name: Abdul Manan
   avatar: bio-photo.jpg
-  bio: "I am a graduate student in the Computer Science department at Brown University. I work in the area of computer systems with Dr Theophilus Benson."
+  bio: "I’m currently a graduate student at Brown University studying Computer Science. I am also part of Brown University Systems Research Group, with a focus on developing tools and systems to understand and improve the performance of the existing systems (like webpages or QUIC protocol). My interests revolve around computer networks, distributed systems and software development."
   email: abdul_manan [at] brown [dot] edu
   # Do not include the @ symbol in your Twitter username
   twitter: #username
