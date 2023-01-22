@@ -6,22 +6,30 @@ tags: ["Abdul Manan", "Brown University", "PhD", "Student", "LUMS", "Web Perform
 ---
 ## Currently
 
-I am a first-year Ph.D. student in the Computer Science department at <a href="https://www.brown.edu">Brown University</a>. I work in the area of computer systems with <a href="https://cs.brown.edu/~tab">Dr Theophilus Benson</a>. Prior to this, I worked with <a href="https://web.lums.edu.pk/~ihsan/">Dr Ihsan Ayyub Qazi</a> and <a>Dr Zafar Ayyub Qazi</a> on improving the web user-experience for the developing world.
+I am a Graduate Student in the Computer Science department at <a href="https://www.brown.edu">Brown University</a>. I am working in the area of computer networks and systems with <a href="https://cs.brown.edu/~tab">Dr Theophilus Benson</a>. Prior to this, I have worked with <a href="https://web.lums.edu.pk/~ihsan/">Dr Ihsan Ayyub Qazi</a> and <a>Dr Zafar Ayyub Qazi</a> on improving the web user-experience for the developing world.
 
 ## Education
 
 `2021 - `
 __Brown University__
-Ph.D in Computer Science
+Sc.M. in Computer Science
 
 `2016 - 2020`
 __Lahore University of Management Sciences__
 BS in Computer Science
 
+
+## Internship
+
+`Summer 2022`
+__Siemens Technology__
+SDE Intern | NJ
+
+
 ## Awards
 
 `2021`
-Doctorate Fellowship, Brown University 
+Graduate Student Fellowship, Brown University 
 
 `May 2020`
 Award of Distinction, Lahore University of Management Sciences
@@ -36,6 +44,10 @@ Dean's Honor List, Lahore University of Management Sciences
 ## Publications
 
 <!-- A list is also available [online](https://scholar.google.co.uk/citations?user=-_wO-34AAAAJ) -->
+`2022`
+__Extending 5G services with Zero Trust security pillars: a modular approach__
+IEEE/ACS 19th International Conference on Computer Systems and Applications
+
 `2020`
 __Mobile web browsing under memory pressure__
 ACM SIGCOMM CRR
