@@ -21,9 +21,9 @@ BS in Computer Science
 
 ## Internship
 
-`Summer 2022`
+`Summer 2022, NJ`
 __Siemens Technology__
-SDE Intern | NJ
+SDE Intern
 
 
 ## Awards
