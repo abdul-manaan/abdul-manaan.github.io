@@ -1,11 +1,27 @@
 (() => {
-  const endpoint = document.currentScript.dataset.counterEndpoint;
-  if (!endpoint) return;
-  fetch(endpoint, { method: 'POST', credentials: 'omit', cache: 'no-store', signal: AbortSignal.timeout(5000) })
-    .then(response => { if (!response.ok) throw new Error('Counter unavailable'); return response.json(); })
+  const script = document.currentScript;
+  const target = document.getElementById('visits');
+  if (!target) return;
+  const endpoint = script && script.dataset.counterEndpoint;
+  if (!endpoint) { target.textContent = 'Unavailable'; return; }
+
+  // Keep the footer visible, even when the service is slow or blocked.
+  const controller = typeof AbortController === 'function' ? new AbortController() : null;
+  const timeout = setTimeout(() => {
+    target.textContent = 'Temporarily unavailable';
+    if (controller) controller.abort();
+  }, 10000);
+  const options = { method: 'POST', credentials: 'omit', cache: 'no-store' };
+  if (controller) options.signal = controller.signal;
+  Promise.resolve().then(() => fetch(endpoint, options))
+    .then(response => {
+      if (!response.ok) throw new Error('Counter unavailable');
+      return response.json();
+    })
     .then(({ count }) => {
-      if (!Number.isSafeInteger(count) || count < 0) return;
-      document.getElementById('visits').textContent = count.toLocaleString();
-      document.getElementById('page-views').hidden = false;
-    }).catch(() => {});
+      if (!Number.isSafeInteger(count) || count < 0) throw new Error('Invalid count');
+      target.textContent = count.toLocaleString();
+    })
+    .catch(() => { target.textContent = 'Temporarily unavailable'; })
+    .finally(() => clearTimeout(timeout));
 })();

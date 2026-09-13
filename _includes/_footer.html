@@ -20,9 +20,13 @@
 <br /></span>
 {% else  %}
 <span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://ncsu-libraries.github.io/jekyll-academic/" rel="nofollow">Jekyll Academic</a> theme.
-  {% if site.counter_endpoint != "" and site.counter_endpoint %}
-  <span id="page-views" hidden> · Page views: <span id="visits" aria-live="polite"></span></span>
-  <script defer src="{{ '/assets/js/counter.js' | relative_url }}" data-counter-endpoint="{{ site.counter_endpoint | escape }}"></script>
-  {% endif %}
 <br /></span>
+{% endif %}
+
+{% if site.counter_endpoint != "" and site.counter_endpoint %}
+<p id="page-views" style="margin: 12px 0 0; font-size: 14px; color: #333;">
+  Page views: <strong id="visits" aria-live="polite">Loading…</strong>
+</p>
+<script defer src="{{ '/assets/js/counter.js' | relative_url }}?v=2" data-counter-endpoint="{{ site.counter_endpoint | escape }}"></script>
+<noscript><p>Enable JavaScript to display the page-view count.</p></noscript>
 {% endif %}
