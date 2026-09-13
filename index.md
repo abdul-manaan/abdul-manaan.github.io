@@ -37,4 +37,4 @@ My research at **Brown University** explored syscall filtering, QUIC implementat
 - **Static taint analysis:** An LLVM pass for identifying information leakage in Rust applications.
 - **Protocol implementation:** QUIC, UDP, and Ethernet implementation work in C.
 
-[Explore my experience]({{ '/resume.html' | relative_url }}) · [Read my publications]({{ '/publications.html' | relative_url }})
+[Explore my experience]({{ '/resume/' | relative_url }}) · [Read my publications]({{ '/publications/' | relative_url }})
