@@ -91,6 +91,32 @@ var _mfpOn = function(name, f) {
 			$.magnificPopup.instance = mfp;
 		}
 	},
+	_sanitizeMarkup = function(markup) {
+		if(typeof markup !== 'string') {
+			return markup;
+		}
+
+		var nodes = $.parseHTML(markup, document, false) || [];
+		var $nodes = $(nodes);
+
+		$nodes.find('*').addBack().each(function() {
+			var attrs = this.attributes;
+			if(!attrs) {
+				return;
+			}
+			for(var i = attrs.length - 1; i >= 0; i--) {
+				var name = attrs[i].name;
+				var value = attrs[i].value;
+				if(/^on/i.test(name)) {
+					this.removeAttribute(name);
+				} else if((name === 'href' || name === 'src' || name === 'xlink:href') && /^\s*javascript:/i.test(value)) {
+					this.removeAttribute(name);
+				}
+			}
+		});
+
+		return $nodes;
+	},
 	// CSS transition detection, https://stackoverflow.com/questions/7264899/detect-css-transitions-using-javascript-and-without-modernizr
 	supportsTransitions = function() {
 		var s = document.createElement('p').style, // 's' for style. better to create an element if body yet to exist
@@ -504,7 +530,7 @@ MagnificPopup.prototype = {
 			_mfpTrigger('FirstMarkupParse', markup);
 
 			if(markup) {
-				mfp.currTemplate[type] = $(markup);
+				mfp.currTemplate[type] = _sanitizeMarkup(markup);
 			} else {
 				// if there is no markup found we just define that template is parsed
 				mfp.currTemplate[type] = true;
