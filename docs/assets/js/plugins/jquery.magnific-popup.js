@@ -379,7 +379,8 @@ MagnificPopup.prototype = {
 		if(prependTo) {
 			if(prependTo.jquery) {
 				prependToEl = prependTo;
-			} else if(prependTo.nodeType || prependTo === window || prependTo === document) {
+			} else if((typeof prependTo === 'object' || typeof prependTo === 'function') &&
+				(prependTo.nodeType || prependTo === window || prependTo === document)) {
 				prependToEl = $(prependTo);
 			} else if(typeof prependTo === 'string') {
 				prependToEl = $($.find(prependTo));
