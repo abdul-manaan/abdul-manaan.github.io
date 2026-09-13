@@ -79,7 +79,8 @@ var _mfpOn = function(name, f) {
 	_getCloseBtn = function(type) {
 		if(type !== _currPopupType || !mfp.currTemplate.closeBtn) {
 			var safeTitle = $('<div/>').text(mfp.st.tClose == null ? '' : String(mfp.st.tClose)).html();
-			mfp.currTemplate.closeBtn = $( mfp.st.closeMarkup.replace('%title%', safeTitle ) );
+			var closeMarkup = mfp.st.closeMarkup.replace('%title%', safeTitle );
+			mfp.currTemplate.closeBtn = $( _sanitizeMarkup(closeMarkup) );
 			_currPopupType = type;
 		}
 		return mfp.currTemplate.closeBtn;
