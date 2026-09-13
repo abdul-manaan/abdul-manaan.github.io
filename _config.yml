@@ -72,4 +72,4 @@ include: [".htaccess"]
 exclude: ["resume-source", "tools", "cloudflare", "output", "DEPLOYMENT.md", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
 # Set to your deployed Cloudflare Worker URL to enable the page-view counter.
-counter_endpoint: ""
+counter_endpoint: "https://abdul-manan-page-views.fnuabdulmanan1.workers.dev/views"
