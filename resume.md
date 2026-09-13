@@ -14,7 +14,7 @@ excerpt: Experience in Zero Trust networking, systems engineering, compilers, an
 ### Cloudflare
 **System Engineer** · Austin, TX · Nov 2025 - Present
 
-- Contribute to [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/) and its Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ bare-metal servers handling billions of requests daily.
+- Contribute to [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/) and its Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ servers handling billions of requests daily.
 - Build and enhance networking components for TCP termination, regionalization, and security policy enforcement.
 - Improve traffic-flow debugging through packet sampling and telemetry for routing decisions, performance, and policy enforcement.
 
@@ -23,12 +23,12 @@ excerpt: Experience in Zero Trust networking, systems engineering, compilers, an
 
 - Diagnosed networking and kernel security issues in mission-critical InterSystems applications.
 - Developed an ObjectScript performance-tracing API capturing CPU cycles, network connections, database accesses, and function calls.
-- Modified the C++ ObjectScript compiler to insert instrumentation hooks during compilation.
+- Modified the C ObjectScript compiler to insert instrumentation hooks during compilation.
 
 ### Siemens
 **Software Development Intern** · Princeton, NJ · Jun 2022 - Aug 2022
 
-- Designed and prototyped a Zero Trust security extension for 5G core services using Free5GC, Go, and C++.
+- Designed and prototyped a [Zero Trust security extension for 5G core services](https://doi.org/10.1109/AICCSA56895.2022.10017774) using Free5GC, Go, and C++.
 - Supported 100,000+ devices with less than 1% performance overhead in the prototype.
 
 ### Brown University
@@ -42,6 +42,8 @@ excerpt: Experience in Zero Trust networking, systems engineering, compilers, an
 **Research Assistant** · Lahore, Pakistan · Jan 2019 - May 2020
 
 - Investigated mobile video bottlenecks: memory pressure reduced frame rates by up to 80%; kernel memory management and disk I/O caused frame drops of up to 40%.
+
+Coauthored paper: [Mobile Web Browsing Under Memory Pressure](https://cs.brown.edu/people/tab/papers/CCR20.pdf). Related video research: [Coal Not Diamonds: How Memory Pressure Falters Mobile Video QoE](https://talha.cs.illinois.edu/files/coal-not-diamonds.pdf), by Talha Waheed and colleagues (I am not a coauthor).
 
 ## Education
 
@@ -63,5 +65,5 @@ Built a 32-bit RISC-V operating system in `no_std` Rust with Sv32 virtual memory
 
 ## Publications
 
-- *Extending 5G services with Zero Trust security pillars: a modular approach.* IEEE/ACS AICCSA, 2022.
-- *Mobile web browsing under memory pressure.* ACM SIGCOMM Computer Communication Review, 2020.
+- [*Extending 5G services with Zero Trust security pillars: a modular approach.*](https://doi.org/10.1109/AICCSA56895.2022.10017774) IEEE/ACS AICCSA, 2022.
+- [*Mobile web browsing under memory pressure.*](https://cs.brown.edu/people/tab/papers/CCR20.pdf) ACM SIGCOMM Computer Communication Review, 2020.

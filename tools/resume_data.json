@@ -5,7 +5,7 @@
     "Austin, TX",
     "Nov 2025 - Present",
     [
-      "Contribute to Cloudflare One and its Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ bare-metal servers handling billions of requests daily.",
+      "Contribute to Cloudflare One and its Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ servers handling billions of requests daily.",
       "Build and enhance networking components for TCP termination, regionalization, and security policy enforcement.",
       "Improve traffic-flow debugging through packet sampling and telemetry for routing decisions, performance, and policy enforcement."
     ]
@@ -18,7 +18,7 @@
     [
       "Diagnosed networking and kernel security issues in mission-critical InterSystems applications.",
       "Developed an ObjectScript performance-tracing API capturing CPU cycles, network connections, database accesses, and function calls.",
-      "Modified the C++ ObjectScript compiler to insert instrumentation hooks during compilation."
+      "Modified the C ObjectScript compiler to insert instrumentation hooks during compilation."
     ]
   ],
   [

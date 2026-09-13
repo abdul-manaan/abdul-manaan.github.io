@@ -29,7 +29,7 @@ Austin, TX $|$ (718) 578-3399 $|$ \href{mailto:fnu.abdul.manan@gmail.com}{fnu.ab
 \section{Experience}
 \role{Cloudflare}{Austin, TX}{System Engineer}{Nov 2025 -- Present}
 \begin{itemize}
-\item Build \href{https://developers.cloudflare.com/cloudflare-one/}{Cloudflare One} Zero Trust data-plane components for policy-driven routing across a global edge network of 50K+ bare-metal servers handling billions of requests per day.
+\item Build \href{https://developers.cloudflare.com/cloudflare-one/}{Cloudflare One} Zero Trust data-plane components for policy-driven routing across a global edge network of 50K+ servers handling billions of requests per day.
 \item Enhance TCP termination, regionalization, and security policy enforcement for reliable, low-latency traffic flow.
 \item Introduce packet sampling and telemetry to improve visibility into customer traffic, routing decisions, and policy enforcement.
 \end{itemize}
@@ -37,12 +37,12 @@ Austin, TX $|$ (718) 578-3399 $|$ \href{mailto:fnu.abdul.manan@gmail.com}{fnu.ab
 \role{InterSystems Corporation}{Cambridge, MA}{Developer Support Engineer}{Jul 2023 -- Nov 2025}
 \begin{itemize}
 \item Diagnosed networking and kernel security issues affecting mission-critical applications.
-\item Built an ObjectScript performance-tracing API for CPU cycles, network connections, database accesses, and function calls; modified the C++ compiler to insert instrumentation hooks during compilation.
+\item Built an ObjectScript performance-tracing API for CPU cycles, network connections, database accesses, and function calls; modified the C compiler to insert instrumentation hooks during compilation.
 \end{itemize}
 \vspace{2pt}
 \role{Siemens}{Princeton, NJ}{Software Development Intern}{Jun 2022 -- Aug 2022}
 \begin{itemize}
-\item Prototyped a modular Zero Trust extension for 5G core services on Free5GC using Go and C++; supported 100K+ devices with less than 1\% performance overhead.
+\item Prototyped a \href{https://doi.org/10.1109/AICCSA56895.2022.10017774}{\underline{modular Zero Trust extension for 5G core services}} on Free5GC using Go and C++; supported 100K+ devices with less than 1\% performance overhead.
 \end{itemize}
 \vspace{2pt}
 \role{Brown University}{Providence, RI}{Research Assistant}{Jan 2021 -- May 2023}
@@ -54,11 +54,12 @@ Austin, TX $|$ (718) 578-3399 $|$ \href{mailto:fnu.abdul.manan@gmail.com}{fnu.ab
 \role{Lahore University of Management Sciences}{Lahore, Pakistan}{Research Assistant}{Jan 2019 -- May 2020}
 \begin{itemize}
 \item Analyzed mobile video bottlenecks: memory pressure reduced frame rates by up to 80\%; kernel memory management and disk I/O caused frame drops of up to 40\%.
+\item \href{https://cs.brown.edu/people/tab/papers/CCR20.pdf}{\underline{Coauthored web-browsing paper}}; related video research: \href{https://talha.cs.illinois.edu/files/coal-not-diamonds.pdf}{\underline{Coal Not Diamonds}} (Waheed et al.; not a coauthor).
 \end{itemize}
 \section{Projects}
 \project{tinyOS-rs $|$ Rust, RISC-V, QEMU}{Built a 32-bit OS in \texttt{no\_std} Rust with Sv32 paging, process scheduling, system calls, VirtIO drivers, a tar filesystem, a shell, and a TCP/IP stack.}
 \project{Kernel-level network monitoring $|$ eBPF, C++}{Built packet inspection across Ethernet, IP, and TCP, with service-level CPU utilization.}
-\project{Static taint analysis $|$ LLVM, C++}{Implemented a compiler pass to identify information leakage in Rust applications.}
+\project{Static taint analysis $|$ LLVM, Rust}{Implemented a compiler pass to identify information leakage in Rust applications.}
 \section{Education}
 \textbf{Brown University} --- Sc.M. in Computer Science; GPA: 4.0/4.0 \hfill May 2023\\
 \textbf{Lahore University of Management Sciences} --- BS in Computer Science; Distinction \hfill May 2020
@@ -67,6 +68,6 @@ Austin, TX $|$ (718) 578-3399 $|$ \href{mailto:fnu.abdul.manan@gmail.com}{fnu.ab
 \textbf{Systems:} Linux, Bash, Docker, eBPF, LLVM, x86, RISC-V, microservices, MySQL\\
 \textbf{Areas:} TCP/IP, QUIC, Zero Trust, distributed systems, compiler instrumentation, program analysis, fuzz testing
 \section{Publications}
-\textit{Extending 5G services with Zero Trust security pillars: a modular approach.} IEEE/ACS AICCSA, 2022.\\
-\textit{Mobile web browsing under memory pressure.} ACM SIGCOMM Computer Communication Review, 2020.
+\href{https://doi.org/10.1109/AICCSA56895.2022.10017774}{\textit{Extending 5G services with Zero Trust security pillars: a modular approach.}} IEEE/ACS AICCSA, 2022.\\
+\href{https://cs.brown.edu/people/tab/papers/CCR20.pdf}{\textit{Mobile web browsing under memory pressure.}} ACM SIGCOMM Computer Communication Review, 2020.
 \end{document}
