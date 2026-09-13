@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Systems, networks, and the details that make them work.
-excerpt: Abdul Manan is a System Engineer at Cloudflare working on Zero Trust networking, distributed systems, and observability.
+excerpt: Abdul Manan is a Systems Engineer at Cloudflare working on Zero Trust networking, distributed systems, and observability.
 menutitle: Home
 menuorder: 1
 share: false
 tags: [Abdul Manan, Cloudflare, Networking, Distributed Systems, Zero Trust]
 ---
 
-I'm **Abdul Manan**, a **System Engineer at Cloudflare**, based in Austin, Texas. I work on **[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)**, specifically its Zero Trust data plane: the systems that proxy traffic, apply security policies, and route connections across a global edge network.
+I'm **Abdul Manan**, a **Systems Engineer at Cloudflare**, based in Austin, Texas. I work on **[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)**, specifically its Zero Trust data plane: the systems that proxy traffic, apply security policies, and route connections across a global edge network.
 
 My work spans TCP termination, regionalization, and traffic observability. I enjoy understanding how systems behave under real workloads, then building the tools and infrastructure to make them faster, safer, and easier to debug.
 

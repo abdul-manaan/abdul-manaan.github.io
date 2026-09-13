@@ -1,13 +1,13 @@
 # Site wide configuration
 
-title: Abdul Manan | Systems & Networking Engineer
+title: Abdul Manan | Systems Engineer
 locale: en_US
 logo: # filename of a logo image that has been placed into your images directory
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
   name: Abdul Manan
   avatar: bio-photo.jpg
-  bio: "System Engineer at Cloudflare in Austin, TX. Building networked systems with a focus on Zero Trust, performance, and observability."
+  bio: "Systems Engineer at Cloudflare in Austin, TX. Building networked systems with a focus on Zero Trust, performance, and observability."
   email: fnu.abdul.manan@gmail.com
   # Do not include the @ symbol in your Twitter username
   twitter: #username

@@ -12,7 +12,7 @@ excerpt: Experience in Zero Trust networking, systems engineering, compilers, an
 ## Experience
 
 ### Cloudflare
-**System Engineer** · Austin, TX · Nov 2025 - Present
+**Systems Engineer** · Austin, TX · Nov 2025 - Present
 
 - Contribute to [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/) and its Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ servers handling billions of requests daily.
 - Build and enhance networking components for TCP termination, regionalization, and security policy enforcement.
