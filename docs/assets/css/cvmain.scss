@@ -12,8 +12,8 @@ sitemap: false
 */
 
 // Partials
-$highlightcolor: {{ site.highlight-color }};
-$lowlightcolor: {{ site.lowlight-color }};
+$highlightcolor: $highlight-color;
+$lowlightcolor: $lowlight-color;
 @import "resume";
 @import "variables";
 @import "grid";
