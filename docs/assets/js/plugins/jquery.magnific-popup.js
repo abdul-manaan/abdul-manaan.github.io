@@ -79,7 +79,14 @@ var _mfpOn = function(name, f) {
 	_getCloseBtn = function(type) {
 		if(type !== _currPopupType || !mfp.currTemplate.closeBtn) {
 			var safeTitle = $('<div/>').text(mfp.st.tClose == null ? '' : String(mfp.st.tClose)).html();
-			var closeMarkup = mfp.st.closeMarkup.replace('%title%', safeTitle );
+			var closeMarkupTemplate = (typeof mfp.st.closeMarkup === 'string') ? mfp.st.closeMarkup : '<button title="%title%" type="button" class="mfp-close">&#215;</button>';
+
+			// Reject obviously unsafe custom templates from options and fallback to a safe default.
+			if(/<\s*script\b/i.test(closeMarkupTemplate) || /\son\w+\s*=/i.test(closeMarkupTemplate) || /\b(?:href|src|xlink:href)\s*=\s*(['"])\s*javascript:/i.test(closeMarkupTemplate)) {
+				closeMarkupTemplate = '<button title="%title%" type="button" class="mfp-close">&#215;</button>';
+			}
+
+			var closeMarkup = closeMarkupTemplate.replace('%title%', safeTitle );
 			mfp.currTemplate.closeBtn = $( _sanitizeMarkup(closeMarkup) );
 			_currPopupType = type;
 		}
