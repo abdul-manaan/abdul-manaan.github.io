@@ -43,7 +43,7 @@ excerpt: Experience in Zero Trust networking, systems engineering, compilers, an
 
 - Investigated mobile video bottlenecks: memory pressure reduced frame rates by up to 80%; kernel memory management and disk I/O caused frame drops of up to 40%.
 
-Coauthored paper: [Mobile Web Browsing Under Memory Pressure](https://cs.brown.edu/people/tab/papers/CCR20.pdf). Related video research: [Coal Not Diamonds: How Memory Pressure Falters Mobile Video QoE](https://talha.cs.illinois.edu/files/coal-not-diamonds.pdf), by Talha Waheed and colleagues (I am not a coauthor).
+Coauthored paper: [Mobile Web Browsing Under Memory Pressure](https://cs.brown.edu/people/tab/papers/CCR20.pdf). Related video research: [Coal Not Diamonds: How Memory Pressure Falters Mobile Video QoE](https://talha.cs.illinois.edu/files/coal-not-diamonds.pdf), by Talha Waheed and colleagues.
 
 ## Education
 
