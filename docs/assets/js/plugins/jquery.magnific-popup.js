@@ -373,7 +373,23 @@ MagnificPopup.prototype = {
 		$('html').css(windowStyles);
 
 		// add everything to DOM
-		mfp.bgOverlay.add(mfp.wrap).prependTo( mfp.st.prependTo || _body );
+		var prependToEl = _body,
+			prependTo = mfp.st.prependTo;
+
+		if(prependTo) {
+			if(prependTo.jquery) {
+				prependToEl = prependTo;
+			} else if(prependTo.nodeType || prependTo === window || prependTo === document) {
+				prependToEl = $(prependTo);
+			} else if(typeof prependTo === 'string') {
+				prependToEl = $($.find(prependTo));
+				if(!prependToEl.length) {
+					prependToEl = _body;
+				}
+			}
+		}
+
+		mfp.bgOverlay.add(mfp.wrap).prependTo(prependToEl);
 
 		// Save last focused element
 		mfp._lastFocusedEl = document.activeElement;
