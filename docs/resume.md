@@ -19,7 +19,7 @@ excerpt: Experience in Zero Trust networking, systems engineering, compilers, an
 - Improve traffic-flow debugging through packet sampling and telemetry for routing decisions, performance, and policy enforcement.
 
 ### InterSystems Corporation
-**Developer Support Engineer** · Cambridge, MA · Jul 2023 - Nov 2025
+**SDE I & II** · Cambridge, MA · Jul 2023 - Nov 2025
 
 - Diagnosed networking and kernel security issues in mission-critical InterSystems applications.
 - Developed an ObjectScript performance-tracing API capturing CPU cycles, network connections, database accesses, and function calls.
