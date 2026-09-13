@@ -20,12 +20,9 @@
 <br /></span>
 {% else  %}
 <span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://ncsu-libraries.github.io/jekyll-academic/" rel="nofollow">Jekyll Academic</a> theme.
-  Views: <span id="visits"></span>
-  <script>
-    function pageViewsCounter(response) {
-      document.getElementById('visits').innerText = response.value;
-    }
-  </script>
-  <script async src="https://api.countapi.xyz/hit/abdul-manaan.github.io/visits?callback=pageViewsCounter"></script>
+  {% if site.counter_endpoint != "" and site.counter_endpoint %}
+  <span id="page-views" hidden> · Page views: <span id="visits" aria-live="polite"></span></span>
+  <script defer src="{{ '/assets/js/counter.js' | relative_url }}" data-counter-endpoint="{{ site.counter_endpoint | escape }}"></script>
+  {% endif %}
 <br /></span>
 {% endif %}

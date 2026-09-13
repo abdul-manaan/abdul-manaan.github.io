@@ -1,14 +1,14 @@
 # Site wide configuration
 
-title: Abdul Manan | Sc.M. Student
+title: Abdul Manan | Systems & Networking Engineer
 locale: en_US
 logo: # filename of a logo image that has been placed into your images directory
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
   name: Abdul Manan
   avatar: bio-photo.jpg
-  bio: "Currently a Graduate Student at Brown University studying Computer Science. My interests revolve around computer networks, distributed systems and software development."
-  email: abdul_manan [at] brown [dot] edu
+  bio: "System Engineer at Cloudflare in Austin, TX. Building networked systems with a focus on Zero Trust, performance, and observability."
+  email: fnu.abdul.manan@gmail.com
   # Do not include the @ symbol in your Twitter username
   twitter: #username
   linkedin: fnu-abdul-manan
@@ -41,7 +41,7 @@ owner:
 
 # The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
 # you may do so in _sass/variables.scss
-highlight-color: '#CC0000'
+highlight-color: '#176b75'
 lowlight-color: '#000'
   # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
 creative-commons:
@@ -69,4 +69,7 @@ kramdown:
   enable_coderay: false
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["tools", "cloudflare", "output", "DEPLOYMENT.md", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+# Set to your deployed Cloudflare Worker URL to enable the page-view counter.
+counter_endpoint: ""

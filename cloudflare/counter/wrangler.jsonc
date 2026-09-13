@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "abdul-manan-page-views",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-12",
+  "workers_dev": true,
+  "durable_objects": { "bindings": [{ "name": "PAGE_VIEWS", "class_name": "PageViews" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["PageViews"] }],
+  "vars": { "ALLOWED_ORIGINS": "https://abdul-manaan.github.io,https://fnuabdulmanan.org,https://www.fnuabdulmanan.org" }
+}

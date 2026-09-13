@@ -1,77 +1,63 @@
 ---
-layout: resume
-menuorder: 3
+layout: page
+title: Experience & education
 menutitle: Resume
-tags: ["Abdul Manan", "Brown University", "PhD", "Student", "LUMS", "Web Performance"]
+menuorder: 3
+share: false
+excerpt: Experience in Zero Trust networking, systems engineering, compilers, and security research.
 ---
-## Currently
 
-I’m currently a Graduate Student at Brown University studying Computer Science. I am also part of Brown University Systems Research Group, with a focus on developing tools and systems to understand and improve the performance of the existing systems (like webpages or QUIC protocol). My interests revolve around computer networks, distributed systems and software development.
+[Download resume (PDF)]({{ '/assets/Abdul-Manan-Resume.pdf' | relative_url }}) · [LinkedIn](https://www.linkedin.com/in/fnu-abdul-manan)
 
+## Experience
+
+### Cloudflare
+**System Engineer** · Austin, TX · Nov 2025 - Present
+
+- Contribute to the Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ bare-metal servers handling billions of requests daily.
+- Build and enhance networking components for TCP termination, regionalization, and security policy enforcement.
+- Improve traffic-flow debugging through packet sampling and telemetry for routing decisions, performance, and policy enforcement.
+
+### InterSystems Corporation
+**Developer Support Engineer** · Cambridge, MA · Jul 2023 - Nov 2025
+
+- Diagnosed networking and kernel security issues in mission-critical InterSystems applications.
+- Developed an ObjectScript performance-tracing API capturing CPU cycles, network connections, database accesses, and function calls.
+- Modified the C++ ObjectScript compiler to insert instrumentation hooks during compilation.
+
+### Siemens
+**Software Development Intern** · Princeton, NJ · Jun 2022 - Aug 2022
+
+- Designed and prototyped a Zero Trust security extension for 5G core services using Free5GC, Go, and C++.
+- Supported 100,000+ devices with less than 1% performance overhead in the prototype.
+
+### Brown University
+**Research Assistant** · Providence, RI · Jan 2021 - May 2023
+
+- Built a Node.js syscall-filtering tool using dynamic program analysis, reducing exploit potential by 95% with 0-2% performance overhead.
+- Developed distributed QUIC fuzz testing that discovered bugs in Meta and Cloudflare implementations.
+- Compared QUIC and TCP performance: QUIC was up to 20% faster for smaller objects, with negligible differences for pages of 1 MB or larger.
+
+### Lahore University of Management Sciences
+**Research Assistant** · Lahore, Pakistan · Jan 2019 - May 2020
+
+- Investigated mobile video bottlenecks: memory pressure reduced frame rates by up to 80%; kernel memory management and disk I/O caused frame drops of up to 40%.
 
 ## Education
 
-`2021 - `
-__Brown University__
-Sc.M. in Computer Science
+**Brown University** · Sc.M. in Computer Science · May 2023<br>
+GPA: 4.0/4.0. Graduate study in distributed systems, compilers and program analysis, machine learning, cryptography, and software security.
 
-`2016 - 2020`
-__Lahore University of Management Sciences__
-BS in Computer Science
+**Lahore University of Management Sciences** · BS in Computer Science · May 2020<br>
+Graduated with Distinction. Focus: computer networking and security.
 
+## Technical skills
 
-## Internship
-
-`Summer 2022, NJ`
-__Siemens Technology__
-SDE Intern
-
-
-## Awards
-
-`2021`
-Graduate Student Fellowship, Brown University 
-
-`May 2020`
-Award of Distinction, Lahore University of Management Sciences
-
-`2019`
-Summer Research Program Award, Lahore University of Management Sciences
-
-`Fall 2019 - Spring 2020`
-Dean's Honor List, Lahore University of Management Sciences 
-
+**Languages:** C, C++, Python, Go, JavaScript<br>
+**Systems & tools:** Linux, Bash, Docker, eBPF, LLVM, x86, microservices, MySQL<br>
+**Areas:** TCP/IP, QUIC, Zero Trust, distributed systems, compiler instrumentation, program analysis, fuzz testing
 
 ## Publications
 
-<!-- A list is also available [online](https://scholar.google.co.uk/citations?user=-_wO-34AAAAJ) -->
-`2022`
-__Extending 5G services with Zero Trust security pillars: a modular approach__
-IEEE/ACS 19th International Conference on Computer Systems and Applications
-
-`2020`
-__Mobile web browsing under memory pressure__
-ACM SIGCOMM CRR
-
-
-## Teaching
-
-`Spring 2020`
-__Network-Centric Computing__
-TA | LUMS
-
-`Fall 2019`
-__Data Structures__
-TA | LUMS
-
-`Spring 2018`
-__Introduction to Programming__
-TA | LUMS
-
-
-
-<!-- ### Footer
-
-Last updated: May 2013 -->
-
-
+- *Extending 5G services with Zero Trust security pillars: a modular approach.* IEEE/ACS AICCSA, 2022.
+- *Mobile web browsing under memory pressure.* ACM SIGCOMM Computer Communication Review, 2020.
