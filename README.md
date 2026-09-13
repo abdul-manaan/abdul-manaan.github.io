@@ -1,34 +1,68 @@
-## Introduction
-This template utilizes Jekyll, an open source static website generator, as well as a theme based largely off of the Minimal Mistakes theme by Michael Rose. The purpose of this template is to provide you with a simple, well designed website that is optimized for hosting on Github pages. We aim to reduce the technological know-how and time that is usually required for maintaining a personal or professional website.
+# Abdul Manan · Personal website
 
-#### Why Should I Use This?
-By using this template you will have a website that is well designed, easy to maintain, free to host and easy to update. While there are many options out there for personal and professional websites, most are dependant on the platform on which they were built, and cannot be easily migrated. This template, while built for Github Pages integration, provides flexibility should you choose to host it elsewhere.
+Portfolio, research publications, and resume for Abdul Manan, Systems Engineer at Cloudflare.
 
-## [Getting Started Guide](https://ncsu-libraries.github.io/jekyll-academic-docs/)
-Complete documentation for getting started as well as advanced features of Jekyll Academic can be found at [https://ncsu-libraries.github.io/jekyll-academic-docs/](https://ncsu-libraries.github.io/jekyll-academic-docs/).
+**[Visit the website](https://abdul-manaan.github.io/)** · **[Resume](https://abdul-manaan.github.io/assets/Abdul-Manan-Resume.pdf)** · **[LinkedIn](https://www.linkedin.com/in/fnu-abdul-manan)**
 
-## Migrating to a new default branch name
-We've decided to change this project's default branch name to 'main'.  If you've forked this repository prior to July 20th, 2021, then you should a message with update instructions when you go to your fork in github: 
+## Project structure
 
-![fork renamed message](https://user-images.githubusercontent.com/3514165/126372022-ae4c07fa-dec7-427c-a4b5-cdd73aec75eb.png)
+```text
+docs/       Jekyll website, pages, theme, images, and published PDF
+infra/      Cloudflare page-view counter and deployment guide
+resume/     Editable LaTeX resume and build instructions
+.github/    Dependency update configuration
+```
 
-In your fork on GitHub, go to the branches view, and click on the edit icon next to the 'master' branch.  Change the branch name to main.  Underneath the input box where you change the name you will be presented with the commands that you will need to run on your local copy of your fork.
+The website source is grouped under `docs/` because GitHub Pages supports publishing directly from that folder. The folders beginning with `_` inside it are Jekyll conventions.
 
-![local instructions for default branch name change ](https://user-images.githubusercontent.com/3514165/126372635-208fbc4b-698e-4938-bdae-5ff19eed2c96.png)
+## Common changes
 
+| Change | File |
+| --- | --- |
+| Homepage and projects | `docs/index.md` |
+| Experience and education | `docs/resume.md` |
+| Site title, biography, counter URL | `docs/_config.yml` |
+| Publications and blog posts | `docs/_posts/` |
+| Footer and navigation | `docs/_includes/` |
+| Theme styling | `docs/_sass/` |
+| PDF resume | `resume/Abdul-Manan-Resume.tex` |
+| Counter backend | `infra/counter/src/index.js` |
 
-## Upgrade Notes for June 2021 release
-If you are running a fork of Jekyll Academic before June 2021, we made some breaking changes to upgrade the underlying Jekyll version and to address the constant github/dependabot security notices mentioned in issue #4.
+## Local website preview
 
-We have updated Jekyll to version 4 and removed reveal.js as an included library. We still want to support reveal.js presentations, so we have taken the suggestion from issue #4 and made the reveal.js directory a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). If you are running Jekyll Academic as a Github Page, this should hopefully be a minor change.
+With Ruby and Bundler installed:
 
-If, however, you are running Jekyll Academic locally or on a custom server, after merging this repo's commits in to your fork, you will need to go to the command line in your local or custom instance and perform the following command:
+```sh
+cd docs
+bundle install
+bundle exec jekyll serve
+```
 
-  `$ git submodule update --init`
+Open `http://127.0.0.1:4000`. The production counter accepts only the configured public origins, so local previews display its unavailable state. To test counting locally, use Wrangler:
 
-If you have any reveal.js presentations posted, you may need to make some updates for them to display properly using reveal.js version 4.  See [Jekyll's documentation](https://revealjs.com/upgrading/) for details.
+```sh
+cd infra/counter  # from the repository root
+npm ci
+npm run dev
+```
 
-## Keeping reveal.js up to date
-Moving forward, if you'd like to update reveal.js you will need to run the following commands:
+In another terminal, run `node infra/counter/test-counter.mjs`. These tests target local port 8787 and do not change the production count.
 
-  `$ git submodule update --remote`
+## Publishing
+
+Push website changes to `master`. GitHub Pages builds from **`/docs`**. Existing public URLs stay unchanged.
+
+- [Counter deployment and custom-domain setup](infra/README.md)
+- [LaTeX resume build instructions](resume/README.md)
+
+The counter records aggregate page loads, including refreshes, rather than unique visitors. Its backend is a Cloudflare Worker with a SQLite-backed Durable Object. Never commit account tokens or credentials.
+
+## Maintenance
+
+Dependency updates are proposed by Dependabot. Review and test them before merging. Existing dependency advisories are not resolved by reorganizing this repository.
+
+Generated website builds, local PDF delivery copies, dependency folders, and LaTeX intermediates are ignored. The downloadable resume PDF is intentionally tracked for GitHub Pages.
+
+## Credits and license
+
+The website uses Jekyll Academic, based on Minimal Mistakes. The original MIT notice is preserved in [LICENSE](LICENSE). The LaTeX template's license is in [resume/TEMPLATE-LICENSE](resume/TEMPLATE-LICENSE).
