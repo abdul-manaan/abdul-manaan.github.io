@@ -14,7 +14,7 @@ excerpt: Experience in Zero Trust networking, systems engineering, compilers, an
 ### Cloudflare
 **System Engineer** · Austin, TX · Nov 2025 - Present
 
-- Contribute to the Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ bare-metal servers handling billions of requests daily.
+- Contribute to [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/) and its Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ bare-metal servers handling billions of requests daily.
 - Build and enhance networking components for TCP termination, regionalization, and security policy enforcement.
 - Improve traffic-flow debugging through packet sampling and telemetry for routing decisions, performance, and policy enforcement.
 
@@ -51,9 +51,13 @@ GPA: 4.0/4.0. Graduate study in distributed systems, compilers and program analy
 **Lahore University of Management Sciences** · BS in Computer Science · May 2020<br>
 Graduated with Distinction. Focus: computer networking and security.
 
+## Selected project: tinyOS-rs
+
+Built a 32-bit RISC-V operating system in `no_std` Rust with Sv32 virtual memory, process scheduling, system calls, VirtIO drivers, a tar filesystem, a shell, and a TCP/IP stack. Runs in QEMU.
+
 ## Technical skills
 
-**Languages:** C, C++, Python, Go, JavaScript<br>
+**Languages:** C, C++, Rust, Python, Go, JavaScript<br>
 **Systems & tools:** Linux, Bash, Docker, eBPF, LLVM, x86, microservices, MySQL<br>
 **Areas:** TCP/IP, QUIC, Zero Trust, distributed systems, compiler instrumentation, program analysis, fuzz testing
 

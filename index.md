@@ -8,7 +8,7 @@ share: false
 tags: [Abdul Manan, Cloudflare, Networking, Distributed Systems, Zero Trust]
 ---
 
-I'm **Abdul Manan**, a **System Engineer at Cloudflare**, based in Austin, Texas. I work on the Zero Trust data plane: the systems that proxy traffic, apply security policies, and route connections across a global edge network.
+I'm **Abdul Manan**, a **System Engineer at Cloudflare**, based in Austin, Texas. I work on **[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)**, specifically its Zero Trust data plane: the systems that proxy traffic, apply security policies, and route connections across a global edge network.
 
 My work spans TCP termination, regionalization, and traffic observability. I enjoy understanding how systems behave under real workloads, then building the tools and infrastructure to make them faster, safer, and easier to debug.
 
@@ -29,6 +29,8 @@ At **InterSystems**, I diagnosed networking and kernel security issues and built
 My research at **Brown University** explored syscall filtering, QUIC implementations, and web performance. At **LUMS**, I studied the impact of memory pressure and device bottlenecks on mobile web and video performance.
 
 ## Selected projects
+
+- **tinyOS-rs:** A 32-bit RISC-V operating system in `no_std` Rust, with Sv32 virtual memory, process scheduling, system calls, VirtIO drivers, a tar filesystem, a shell, and a TCP/IP stack. Runs in QEMU.
 
 - **QUIC fuzzing:** A distributed framework for analyzing production HTTP/3 implementations, uncovering bugs in Meta and Cloudflare implementations.
 - **Kernel-level network monitoring:** An eBPF tool for packet inspection and service-level CPU utilization.

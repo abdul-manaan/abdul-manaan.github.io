@@ -5,7 +5,7 @@
     "Austin, TX",
     "Nov 2025 - Present",
     [
-      "Contribute to the Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ bare-metal servers handling billions of requests daily.",
+      "Contribute to Cloudflare One and its Zero Trust data plane, supporting policy-driven traffic routing across a global edge network of 50,000+ bare-metal servers handling billions of requests daily.",
       "Build and enhance networking components for TCP termination, regionalization, and security policy enforcement.",
       "Improve traffic-flow debugging through packet sampling and telemetry for routing decisions, performance, and policy enforcement."
     ]

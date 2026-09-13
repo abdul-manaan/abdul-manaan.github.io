@@ -1,0 +1,72 @@
+% Adapted from Jake Gutierrez's MIT-licensed resume, based on sb2nov/resume.
+% https://github.com/jakegut/resume (see TEMPLATE-LICENSE)
+\documentclass[letterpaper,10pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{fontspec}
+
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\titleformat{\section}{\scshape\large\raggedright}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\setlist[itemize]{leftmargin=12pt,topsep=2pt,itemsep=1pt,parsep=0pt,partopsep=0pt}
+\newcommand{\role}[4]{\textbf{#1} \hfill #2\\\textit{#3} \hfill \textit{#4}\par}
+\newcommand{\project}[2]{\textbf{#1} #2\par\vspace{2pt}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Abdul Manan}\\[3pt]
+Austin, TX $|$ (718) 578-3399 $|$ \href{mailto:fnu.abdul.manan@gmail.com}{fnu.abdul.manan@gmail.com}\\[1pt]
+\href{https://www.linkedin.com/in/fnu-abdul-manan}{linkedin.com/in/fnu-abdul-manan} $|$
+\href{https://github.com/abdul-manaan}{github.com/abdul-manaan} $|$
+\href{https://abdul-manaan.github.io}{abdul-manaan.github.io}
+\end{center}
+\vspace{-10pt}
+\section{Experience}
+\role{Cloudflare}{Austin, TX}{System Engineer}{Nov 2025 -- Present}
+\begin{itemize}
+\item Build \href{https://developers.cloudflare.com/cloudflare-one/}{Cloudflare One} Zero Trust data-plane components for policy-driven routing across a global edge network of 50K+ bare-metal servers handling billions of requests per day.
+\item Enhance TCP termination, regionalization, and security policy enforcement for reliable, low-latency traffic flow.
+\item Introduce packet sampling and telemetry to improve visibility into customer traffic, routing decisions, and policy enforcement.
+\end{itemize}
+\vspace{2pt}
+\role{InterSystems Corporation}{Cambridge, MA}{Developer Support Engineer}{Jul 2023 -- Nov 2025}
+\begin{itemize}
+\item Diagnosed networking and kernel security issues affecting mission-critical applications.
+\item Built an ObjectScript performance-tracing API for CPU cycles, network connections, database accesses, and function calls; modified the C++ compiler to insert instrumentation hooks during compilation.
+\end{itemize}
+\vspace{2pt}
+\role{Siemens}{Princeton, NJ}{Software Development Intern}{Jun 2022 -- Aug 2022}
+\begin{itemize}
+\item Prototyped a modular Zero Trust extension for 5G core services on Free5GC using Go and C++; supported 100K+ devices with less than 1\% performance overhead.
+\end{itemize}
+\vspace{2pt}
+\role{Brown University}{Providence, RI}{Research Assistant}{Jan 2021 -- May 2023}
+\begin{itemize}
+\item Built a Node.js syscall-filtering tool using dynamic analysis, reducing exploit potential by 95\% with 0--2\% overhead.
+\item Developed distributed QUIC fuzz testing that found bugs in Meta and Cloudflare implementations; benchmarked QUIC against TCP, observing up to 20\% faster performance for smaller objects.
+\end{itemize}
+\vspace{2pt}
+\role{Lahore University of Management Sciences}{Lahore, Pakistan}{Research Assistant}{Jan 2019 -- May 2020}
+\begin{itemize}
+\item Analyzed mobile video bottlenecks: memory pressure reduced frame rates by up to 80\%; kernel memory management and disk I/O caused frame drops of up to 40\%.
+\end{itemize}
+\section{Projects}
+\project{tinyOS-rs $|$ Rust, RISC-V, QEMU}{Built a 32-bit OS in \texttt{no\_std} Rust with Sv32 paging, process scheduling, system calls, VirtIO drivers, a tar filesystem, a shell, and a TCP/IP stack.}
+\project{Kernel-level network monitoring $|$ eBPF, C++}{Built packet inspection across Ethernet, IP, and TCP, with service-level CPU utilization.}
+\project{Static taint analysis $|$ LLVM, C++}{Implemented a compiler pass to identify information leakage in Rust applications.}
+\section{Education}
+\textbf{Brown University} --- Sc.M. in Computer Science; GPA: 4.0/4.0 \hfill May 2023\\
+\textbf{Lahore University of Management Sciences} --- BS in Computer Science; Distinction \hfill May 2020
+\section{Technical Skills}
+\textbf{Languages:} C, C++, Rust, Python, Go, JavaScript\\
+\textbf{Systems:} Linux, Bash, Docker, eBPF, LLVM, x86, RISC-V, microservices, MySQL\\
+\textbf{Areas:} TCP/IP, QUIC, Zero Trust, distributed systems, compiler instrumentation, program analysis, fuzz testing
+\section{Publications}
+\textit{Extending 5G services with Zero Trust security pillars: a modular approach.} IEEE/ACS AICCSA, 2022.\\
+\textit{Mobile web browsing under memory pressure.} ACM SIGCOMM Computer Communication Review, 2020.
+\end{document}
