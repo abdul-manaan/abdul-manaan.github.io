@@ -12,10 +12,10 @@ sitemap: false
 */
 
 // Partials
+@import "variables";
 $highlightcolor: $highlight-color;
 $lowlightcolor: $lowlight-color;
 @import "resume";
-@import "variables";
 @import "grid";
 @import "mixins";
 @import "normalize";
